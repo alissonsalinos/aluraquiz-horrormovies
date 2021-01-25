@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.wrong};
+  //border: 1px solid ${({ theme }) => theme.colors.wrong};
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
@@ -14,6 +14,10 @@ const Widget = styled.div`
     line-height: 1;
     margin-bottom: 0;
     color: ${({ theme }) => theme.colors.titleColor}
+  }
+
+  h2 {
+    color: ${({ theme }) => theme.colors.contrastText}
   }
 
   p {

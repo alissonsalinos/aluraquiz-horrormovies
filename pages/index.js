@@ -25,11 +25,11 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground>
+    <BackgroundImage>
       <QuizContainer>
         <Widget>
             <Widget.Header>
-              <h1>80' Horror Movies</h1>
+              <h1>Horror Movies Quiz</h1>
             </Widget.Header>
             <Widget.Content>  
               <p>Dolar sit amet...</p>
@@ -38,13 +38,13 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizzes da galera</h1>
+            <h2>Quizzes da galera</h2>
             <p>Dolar sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/alissonsalios" />
-    </QuizBackground>
+      <GitHubCorner projectUrl="https://github.com/alissonsalinos/aluraquiz-horrormovies" />
+    </BackgroundImage>
   )
 }

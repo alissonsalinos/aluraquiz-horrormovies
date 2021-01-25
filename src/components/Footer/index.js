@@ -1,5 +1,6 @@
 
 import styled from 'styled-components'
+import db from '../../../db.json'
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
@@ -11,6 +12,9 @@ const FooterWrapper = styled.footer`
   img {
     width: 58px;
     margin-right: 23px;
+  }
+  p {
+    color: ${db.theme.colors.contrastText}
   }
   a {
     color: white;
