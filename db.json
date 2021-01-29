@@ -1,28 +1,162 @@
 {
-    "bg": "https://bannerupfrontend.herokuapp.com/horror-movies.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "./horror-movies.jpg",
+    "title": "Quiz Horror Movies",
+    "description": "Teste os seus conhecimentos sobre sobre filmes de terror e vamos ver se você terminará vivo no final :)",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/l2YWoWyZXRBxcvEJi/giphy.gif",
+        "title": "Qual o nome da atriz que interpreta a garota possuída em \"O Exorcista\" ?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Jodi Foster",
+          "Audrey Hepburn",
+          "Jamie Lee Curtis",
+          "Linda Blair"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://media.giphy.com/media/x3gWRgW7OBuF2/giphy.gif",
+        "title": "\"It: Uma Obra Prima do Medo\" de 1990, é a dapatação de um livro, qual o nome do autor(a) do livro?",
+        "description": "Faz tempo em haha",
+        "answer": 2,
+        "alternatives": [
+           "H. P. Lovecraft",
+           "Anne Rice",
+           "Stephen King",
+           "Edgar Allan Poe"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/dJUnqme6VY1va/giphy.gif",
+        "title": "Qual o nome das criaturas de outra dimensão que extraem prazer da dor no filme Hellraiser?",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Mezzomorfos",
+           "Cenobitas",
+           "Necromorfos",
+           "Ectomorfos"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3otPoy3uAMJPwFMl5C/giphy.gif",
+        "title": "De que forma Freddy Kueger mata suas vítimas?",
         "description": "Faz tempo em haha",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Dentro dos sonhos",
+           "Atrai para uma cabana",
+           "Espera anoitecer",
+           "Ataca sem aviso prévio"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/hSiHQDHsy2z3EnnTtE/giphy.gif",
+        "title": "Em qual filme Jason Voorhees estreiou como assassino principal da saga de filmes Sexta Feira 13th?",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Sexta Feira 13",
+           "Sexta-Feira 13 - Parte 2",
+           "Sexta-Feira 13 - Parte 3",
+           "Sexta-Feira 13 Parte V - Um Novo Começo"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/I4psSwfcCurZu/giphy.gif",
+        "title": "Qual o ano de lançamento do filme Drácula de Bram Stoker?",
+        "description": "Faz tempo em haha",
+        "answer": 3,
+        "alternatives": [
+           "1994",
+           "1991",
+           "1990",
+           "1992"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2YWoE1MjEPo9sG3K/giphy.gif",
+        "title": "Qual o filme deu origem ao estilo de filmes Slasher Movies?",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Halloween",
+           "O Massacre da Serra Elétrica",
+           "A Hora do Pesadelo",
+           "Sexta Feria 13th"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2YWlSLR1oYq9J4t2/giphy.gif",
+        "title": "Qual o primeiro filme do lendário diretor George Romero?",
+        "description": "Faz tempo em haha",
+        "answer": 3,
+        "alternatives": [
+           "Survival of the Dead",
+           "Creepshow",
+           "Dawn of the Dead",
+           "Night of the Living Dead"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/nbQof4En36W10btx0S/giphy.gif",
+        "title": "Qual o nome de diretor dos filmes Hereditário e Midsommar?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "Ari Aster",
+           "Robert Egger",
+           "Andy Muschietti",
+           "Mike Flanagan"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/huZcRHTS64eJy/giphy.gif",
+        "title": "Quantos filmes tem a saga \"Chucky, O Brinquedo Assassino\"?",
+        "description": "Faz tempo em haha",
+        "answer": 2,
+        "alternatives": [
+           "10",
+           "5",
+           "8",
+           "7"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/4L0TmLYrGr5Fm/giphy.gif",
+        "title": "No filme \"O Silêncio dos Inocentes\", qual o nome do assissino que a investigadora Clarice Starling tenta prender?",
+        "description": "Faz tempo em haha",
+        "answer": 1,
+        "alternatives": [
+           "Hannibal Lecter",
+           "Buffalo Bill",
+           "Letherface",
+           "Nenhuma das anteriores"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/Rbmk3g29XU2DS/giphy.gif",
+        "title": "Em qual lugar acontece os eventos sobrenaturais no filme \"O Ilumiando\"?",
+        "description": "Faz tempo em haha",
+        "answer": 2,
+        "alternatives": [
+           "Em uma mansão",
+           "Em uma cabana",
+           "Em um hotel",
+           "Nenhuma das anteriores"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/WhtUCuFMiQjNm/giphy.gif",
+        "title": "O lendário ator Béla Lugosi interpretou qual monstro famoso no cinema?",
+        "description": "Faz tempo em haha",
+        "answer": 2,
+        "alternatives": [
+           "Frankenstein",
+           "Múmia",
+           "Drácula",
+           "Lobisomem"
         ]
       }
     ],
@@ -37,6 +171,9 @@
         "mainBg": "rgba(0,0,0,.7)",
         "contrastText": "#f5eded",
         "wrong": "#3e3636",
+        "wrongAnswer": "#a20a0a",
+        "borderColor": "#3e3636",
+        "buttonBorderColor": "#a20a0a",
         "success": "#17b794"
       },
       "borderRadius": "4px"

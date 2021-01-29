@@ -1,6 +1,8 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import db from '../db.json'
-import Head from 'next/head'
+import React from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
+
+import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -17,7 +19,7 @@ body {
   background-size: 120% 120% cover; 
   background-position: bottom -79px left -450px;
   // Deixa branco no começo
-  //color: ${({ theme }) => theme.colors.contrastText};
+  color: ${({ theme }) => theme.colors.contrastText};
 }
 html, body {
   min-height: 100vh;
@@ -27,26 +29,30 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-`
+`;
 
-const theme = db.theme
+const { theme } = db;
 
+// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
-       <Head>
+      <Head>
         <title>Horror Movies Quiz</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="Horror Movies Quiz" key="title" />
-        <meta property="og:image" content='https://bannerupfrontend.herokuapp.com/horror-movies.jpg' />
+        <meta property="og:image" content="https://bannerupfrontend.herokuapp.com/horror-movies.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */ }
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
