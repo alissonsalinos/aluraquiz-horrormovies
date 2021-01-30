@@ -21,6 +21,13 @@ body {
   // Deixa branco no começo
   color: ${({ theme }) => theme.colors.contrastText};
 }
+
+@media (max-width:500px){
+  body {
+    background-position: bottom -79px left -900px;
+  }
+}
+
 html, body {
   min-height: 100vh;
 }
