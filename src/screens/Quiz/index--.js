@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizContainer from '../src/components/QuizContainer';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
+// import db from '../../db.json';
+import Widget from '../../components/Widget';
+import QuizContainer from '../../components/QuizContainer';
+import QuizBackground from '../../components/QuizBackground';
+import QuizLogo from '../../components/QuizLogo';
 // import Footer from '../src/components/Footer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import GitHubCorner from '../src/components/GitHubCorner';
-import LoadingBar from '../src/components/Loading';
-import MessageSuccess from '../src/components/Messages/MessageSuccess';
-import MessageError from '../src/components/Messages/MessageError';
+import AlternativesForm from '../../components/AlternativesForm';
+import Button from '../../components/Button';
+import GitHubCorner from '../../components/GitHubCorner';
+import LoadingBar from '../../components/Loading';
+import MessageSuccess from '../../components/Messages/MessageSuccess';
+import MessageError from '../../components/Messages/MessageError';
 
 function ResultWidget({ results }) {
   return (
@@ -158,13 +158,14 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
-  const totalQuestions = db.questions.length;
+  const question = externalQuestions[questionIndex];
+  const totalQuestions = externalQuestions.length;
+  //const bg = externalBg;
 
   function addResult(result) {
     setResults([
