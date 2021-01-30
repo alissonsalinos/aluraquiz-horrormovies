@@ -151,11 +151,11 @@
         "image": "https://media.giphy.com/media/WhtUCuFMiQjNm/giphy.gif",
         "title": "O lendário ator Béla Lugosi interpretou qual monstro famoso no cinema?",
         "description": "Faz tempo em haha",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
            "Frankenstein",
-           "Múmia",
            "Drácula",
+           "Múmia",
            "Lobisomem"
         ]
       }

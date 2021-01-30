@@ -15,6 +15,8 @@ import MessageError from '../../src/components/Messages/MessageError';
 import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
+  const url = window.location.href;
+  const nome = url.split('name=');
   return (
     <Widget>
       <Widget.Header>
@@ -23,7 +25,8 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
+          {nome[1]}
+          , você acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -38,7 +41,7 @@ function ResultWidget({ results }) {
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
+            <li key={`result__${index}`}>
               #
               {index + 1}
               {' '}
